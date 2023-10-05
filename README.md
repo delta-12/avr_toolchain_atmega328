@@ -17,7 +17,7 @@ Use the AVR toolchain and Pocket AVR Programmer to compile and upload a basic C 
 
 #### Ubuntu and other Debian-based Linux distros
 
-The AVR toolchain can be installed on Ubuntu and other Debian-based Linux distributions as follows.
+The AVR toolchain can be installed on Ubuntu and other Debian-based Linux distributions with the following commands.
 
 1. Update package sources
 
@@ -65,7 +65,7 @@ A simple sample program `blink.c` is included in the repo to test the compilatio
 
 ### Makefile
 
-On Ubuntu and other Debian-based distros, the included Makefile can also be used to for compilation and uploading.
+On Ubuntu and other Debian-based distros, the included Makefile can also be used for compilation and uploading.
 
 1. Compile program
 
