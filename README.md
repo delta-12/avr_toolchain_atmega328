@@ -47,9 +47,11 @@ A simple sample program `blink.c` is included in the repo to test the compilatio
 
 1. Compile program with `avr-gcc`
 
-   `avr-gcc -Os -DF_CPU=16000000UL -mmcu=atmega328p <C file> -o <out file>`
+   `avr-gcc -Wall -Os -DF_CPU=16000000UL -mmcu=atmega328p <C file> -o <out file>`
 
    Replace `<C file>` with the name of your C program and `<out file>` with the name of the output file. For instance, `avr-gcc -Os -DF_CPU=16000000UL -mmcu=atmega328p blink.c -o blink.out`
+
+   `-Wall` turns on all warnings, `-Os` optimizes for size, `-DF_CPU=16000000UL` sets the `F_CPU` macro for calculating delays based on a 16MHz clock, and `-mmcu=atmega328p` tells the compiler to compile for the ATmega328p variant of the ATmega328. This last argument can be changed for other variants of the ATmega328.
 
 2. Extract the eeprom segment of the `.out` file to a `.hex` file in Intel hex format
 

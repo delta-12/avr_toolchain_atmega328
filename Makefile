@@ -1,6 +1,6 @@
 # compiler options
 CC=avr-gcc
-CFLAGS= -Os -DF_CPU=16000000UL -mmcu=atmega328p
+CFLAGS= -Wall -Os -DF_CPU=16000000UL -mmcu=atmega328p
 
 # compile and upload all
 all: blink.upload
